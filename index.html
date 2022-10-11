@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="container">
+        <h3 class="brand">the Weather App</h3>
+        <div>
+          <h1 class="temp">16&#176;</h1>
+          <div class="city-name">
+            <h1 class="name">London</h1>
+            <small>
+              <span class="time">06:10</span>
+              <span class="date"> monday oct 12</span>
+            </small>
+          </div>
+          <div class="weather">
+            <img
+              src="weather/64x64/day/113.png"
+              alt="icon"
+              class="icon"
+              width="50"
+              height="50"
+            />
+            <span class="condition">cloudy</span>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="form" id="locationInput">
+          <input
+            placeholder="Search Location Here... "
+            class="search"
+            type="text"
+          />
+          <button type="submit" class="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <ul class="cities">
+          <li class="city">New York</li>
+          <li class="city">Paris</li>
+          <li class="city">tokyo</li>
+          <li class="city">soul</li>
+        </ul>
+        <ul class="details">
+          <h4>Weather Details</h4>
+          <li>
+            <span>Cloudy</span>
+            <span class="cloud">89%</span>
+          </li>
+          <li>
+            <span>Humidity</span>
+            <span class="humidity">65%</span>
+          </li>
+          <li>
+            <span>Wind</span>
+            <span class="wind">12km/h</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
