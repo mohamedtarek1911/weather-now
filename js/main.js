@@ -149,7 +149,7 @@ function weatherData() {
               rgba(0, 0, 0, 0.6),
               rgba(0, 0, 0, 0.6)
             ),
-            url(../imgs/${timeOfDay}/cloudy_1.jpg)`;
+            url(./imgs/${timeOfDay}/cloudy_1.jpg)`;
 
         submitBtn.style.background = "#e5ba92";
         if (timeOfDay == "night") {
@@ -205,7 +205,7 @@ function weatherData() {
               rgba(0, 0, 0, 0.6),
               rgba(0, 0, 0, 0.6)
             ),
-            url(../imgs/${timeOfDay}/rainy_1.jpg)`;
+            url(./imgs/${timeOfDay}/rainy_1.jpg)`;
         submitBtn.style.background = "#647d75";
         if (timeOfDay == "night") {
           submitBtn.style.background = "#325c80";
@@ -216,7 +216,7 @@ function weatherData() {
               rgba(0, 0, 0, 0.6),
               rgba(0, 0, 0, 0.6)
             ),
-            url(../imgs/${timeOfDay}/snowy_1.jpg)`;
+            url(./imgs/${timeOfDay}/snowy_1.jpg)`;
         submitBtn.style.background = "#4d72aa";
         if (timeOfDay == "night") {
           submitBtn.style.background = "#1b1b1b";
