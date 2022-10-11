@@ -174,7 +174,7 @@ function weatherData() {
               rgba(0, 0, 0, 0.6),
               rgba(0, 0, 0, 0.6)
             ),
-            url(../imgs/${timeOfDay}/cloudy_1.jpg)`;
+            url(./imgs/${timeOfDay}/cloudy_1.jpg)`;
         submitBtn.style.background = "#fa6d1b";
 
         if (timeOfDay == "night") {
