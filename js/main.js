@@ -42,7 +42,7 @@ form.addEventListener("sumbit", function (e) {
 async function searchCity(term) {
   let searchCities = [];
   let result = await fetch(
-    `https://api.weatherapi.com/v1/search.json?key=6f9e7a024cb64777875203600220910&q=${term}`
+    `https://api.weatherapi.com/v1/search.json?key=14699c74a7e54078b78143249223005&q=${term}`
   );
   let finalResult = await result.json();
   searchCities.push(finalResult);
@@ -106,7 +106,7 @@ function weatherData() {
   ///////////fetch way (axios way)//////////////
 
   fetch(
-    `https://api.weatherapi.com/v1/current.json?key=6f9e7a024cb64777875203600220910&q=${defualtCity}`
+    `https://api.weatherapi.com/v1/current.json?key=14699c74a7e54078b78143249223005&q=${defualtCity}`
   )
     .then((Response) => Response.json())
     .then((data) => {
