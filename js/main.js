@@ -81,20 +81,19 @@ document.addEventListener("keypress", function (e) {
   }
 });
 
-function datee(day, month, year) {
-  let week = [
-    "Saturday",
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-  ];
-  return week[new Date(`${day}/${month}/${year}`).getDay() + 1];
-}
-
 function weatherData() {
+  function datee(day, month, year) {
+    let week = [
+      "Saturday",
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+    ];
+    return week[new Date(day / month / year).getDay() - 4];
+  }
   ///////////fetch way (async,await)//////////////
 
   //   let result = await fetch(
